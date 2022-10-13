@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul{
+    li{
+        list-style: none;
+    }
+}
+
+.head{
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    ul{
+        display: flex;
+        li{
+            text-transform: uppercase;
+            a{
+                color: #fff;
+                transition: .4s;
+                font-size: 13px;
+                letter-spacing: 0.5px;
+                &:hover{
+                    color: orange;
+                }
+            }
+        }
+        li:nth-child(2){
+            padding: 0 20px;
+        }
+    }
+    .touche{
+        a{
+            text-transform: capitalize;
+            font-family: 'Cookie', cursive;
+            font-size: 2.5rem;
+            color: #fff;
+        }
+    }
+}
+
+.head-phone{
+    display: none;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    a{
+        color: #fff;
+        text-transform: capitalize;
+        font-family: 'Cookie', cursive;
+        font-size: 2.5rem;
+        i{
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.Reservation{
+    background-image: url(https://yevgenysim-turkey.github.io/touche/assets/img/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    height: 905px;
+    padding: 20rem 0;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: rgba(15, 15, 15, 0.8);
+    }
+    h6{
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 0.9px;
+        span{
+            color: orange;
+        }
+    }
+    h1{
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 4rem;
+        letter-spacing: 0.5px;
+    }
+    p{
+        font-size: 18px;
+        padding-bottom: 3rem;
+    }
+    #btn{
+        text-transform: uppercase;
+        padding: 15px 30px;
+        border: 1px solid orange;
+        font-weight: 700;
+        font-size: 13px;
+        color: #fff;
+        letter-spacing: 0.5px;
+        transition: .5s;
+        &:hover{
+            color: orange;
+        }
+    }
+    .icons{
+        ul{
+            li{
+                display: inline-block;
+                margin-bottom: 30px;
+                a{
+                    color: #fff;
+                    transition: .5s;
+                    font-size: 15px;
+                    &:hover{
+                        color: orange;
+                    }
+                }
+            }
+            li:nth-child(2){
+                padding: 0 30px;
+            }
+        }
+    }
+    .location{
+        p{
+            color: #fff;
+            font-size: 15px;
+            i{
+                color: orange;
+            }
+        }
+    }
+    .reservFoot{
+        margin-top: 17rem;
+    }
+}
+
+.Amazing{
+    padding-top: 3rem;
+    .titl{
+        hr{
+            background-color: #f5a637;
+            border-color: #f5a637;
+            width: 20%;
+            height: 3px;
+            opacity: 1;
+        }
+        p{
+            font-size: 1.3rem;
+        }
+    }
+    .image{
+        img{
+            height: 400px;
+        }
+    }
+    .right{
+        h6{
+           font-size: 2rem;
+           font-family: 'Abyssinica SIL', serif;
+           margin-bottom: 15px;
+        }
+        p{
+            color: #6c757d;
+            line-height: 1.7;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.Enjoy{
+    padding: 3rem 0;
+    background-image: url(https://yevgenysim-turkey.github.io/touche/assets/img/19.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    hr{
+        background-color: #f5a637;
+        border-color: #f5a637;
+        width: 10%;
+        height: 3px;
+        opacity: 1;
+    }
+    p{
+        font-size: 21px;
+    }
+}
+
+.Menu{
+    padding: 3rem 0;
+    .titl{
+        h1{
+            font-family: 'Abyssinica SIL', serif;
+            font-size: 1.8rem;
+        }
+        p{
+            font-size: 19px;
+            color: #6c757d;
+        }
+    }
+    .choose{
+        margin: 1rem 0;
+        a{
+            text-transform: uppercase;
+            padding: 0 5px;
+            color: #6c757d;
+            font-weight: bold;
+            transition: .4s;
+            font-size: 14px;
+            &:hover{
+                color: black;
+            }
+        }
+    }
+    .boxs{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3rem 0;
+        .eat{
+            position: relative;
+            margin: 10px 0;
+            .txt{
+                h3{
+                    font-family: 'Abyssinica SIL', serif;
+                    font-size: 1.3rem;
+                }
+                p{
+                    color: #6c757d;
+                }
+            }
+            .price{
+                color: #000;
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                background-color: #6c757d;
+                border-color: #6c757d;
+                width: 90%;
+                height: 0.5px;
+                opacity: 0.1;
+            }
+        }
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        background-color: #6c757d;
+        border-color: #6c757d;
+        width: 90%;
+        height: 0.5px;
+        opacity: 0.1;
+    }
+}
+
+@media(max-width:576px){
+    .head{
+        display: none;
+    }
+    .head-phone{
+        display: block;
+    }
+    .Reservation{
+        .icons{
+            text-align: center;
+        }
+        .reservFoot{
+            margin-top: 10rem;
+        }
+    }
+    .Amazing{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width:990px){
+    .head{
+        display: none;
+    }
+    .head-phone{
+        display: block;
+    }
+    .Reservation{
+        .icons{
+            text-align: center;
+        }
+        .reservFoot{
+            margin-top: 13rem;
+        }
+    }
+    .Amazing{
+        img{
+            width: 100%;
+        }
+    }
+}

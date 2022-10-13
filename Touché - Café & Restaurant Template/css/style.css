@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+}
+
+.head {
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.head ul {
+  display: flex;
+}
+.head ul li {
+  text-transform: uppercase;
+}
+.head ul li a {
+  color: #fff;
+  transition: 0.4s;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.head ul li a:hover {
+  color: orange;
+}
+.head ul li:nth-child(2) {
+  padding: 0 20px;
+}
+.head .touche a {
+  text-transform: capitalize;
+  font-family: "Cookie", cursive;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.head-phone {
+  display: none;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.head-phone a {
+  color: #fff;
+  text-transform: capitalize;
+  font-family: "Cookie", cursive;
+  font-size: 2.5rem;
+}
+.head-phone a i {
+  font-size: 1.3rem;
+}
+
+.Reservation {
+  background-image: url(https://yevgenysim-turkey.github.io/touche/assets/img/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  height: 905px;
+  padding: 20rem 0;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.Reservation .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(15, 15, 15, 0.8);
+}
+.Reservation h6 {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.9px;
+}
+.Reservation h6 span {
+  color: orange;
+}
+.Reservation h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 4rem;
+  letter-spacing: 0.5px;
+}
+.Reservation p {
+  font-size: 18px;
+  padding-bottom: 3rem;
+}
+.Reservation #btn {
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border: 1px solid orange;
+  font-weight: 700;
+  font-size: 13px;
+  color: #fff;
+  letter-spacing: 0.5px;
+  transition: 0.5s;
+}
+.Reservation #btn:hover {
+  color: orange;
+}
+.Reservation .icons ul li {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.Reservation .icons ul li a {
+  color: #fff;
+  transition: 0.5s;
+  font-size: 15px;
+}
+.Reservation .icons ul li a:hover {
+  color: orange;
+}
+.Reservation .icons ul li:nth-child(2) {
+  padding: 0 30px;
+}
+.Reservation .location p {
+  color: #fff;
+  font-size: 15px;
+}
+.Reservation .location p i {
+  color: orange;
+}
+.Reservation .reservFoot {
+  margin-top: 17rem;
+}
+
+.Amazing {
+  padding-top: 3rem;
+}
+.Amazing .titl hr {
+  background-color: #f5a637;
+  border-color: #f5a637;
+  width: 20%;
+  height: 3px;
+  opacity: 1;
+}
+.Amazing .titl p {
+  font-size: 1.3rem;
+}
+.Amazing .image img {
+  height: 400px;
+}
+.Amazing .right h6 {
+  font-size: 2rem;
+  font-family: "Abyssinica SIL", serif;
+  margin-bottom: 15px;
+}
+.Amazing .right p {
+  color: #6c757d;
+  line-height: 1.7;
+  font-size: 1.2rem;
+}
+
+.Enjoy {
+  padding: 3rem 0;
+  background-image: url(https://yevgenysim-turkey.github.io/touche/assets/img/19.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+.Enjoy hr {
+  background-color: #f5a637;
+  border-color: #f5a637;
+  width: 10%;
+  height: 3px;
+  opacity: 1;
+}
+.Enjoy p {
+  font-size: 21px;
+}
+
+.Menu {
+  padding: 3rem 0;
+}
+.Menu .titl h1 {
+  font-family: "Abyssinica SIL", serif;
+  font-size: 1.8rem;
+}
+.Menu .titl p {
+  font-size: 19px;
+  color: #6c757d;
+}
+.Menu .choose {
+  margin: 1rem 0;
+}
+.Menu .choose a {
+  text-transform: uppercase;
+  padding: 0 5px;
+  color: #6c757d;
+  font-weight: bold;
+  transition: 0.4s;
+  font-size: 14px;
+}
+.Menu .choose a:hover {
+  color: black;
+}
+.Menu .boxs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+.Menu .boxs .eat {
+  position: relative;
+  margin: 10px 0;
+}
+.Menu .boxs .eat .txt h3 {
+  font-family: "Abyssinica SIL", serif;
+  font-size: 1.3rem;
+}
+.Menu .boxs .eat .txt p {
+  color: #6c757d;
+}
+.Menu .boxs .eat .price {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.Menu .boxs .eat::after {
+  content: "";
+  position: absolute;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  width: 90%;
+  height: 0.5px;
+  opacity: 0.1;
+}
+.Menu::after {
+  content: "";
+  position: absolute;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  width: 90%;
+  height: 0.5px;
+  opacity: 0.1;
+}
+
+@media (max-width: 576px) {
+  .head {
+    display: none;
+  }
+  .head-phone {
+    display: block;
+  }
+  .Reservation .icons {
+    text-align: center;
+  }
+  .Reservation .reservFoot {
+    margin-top: 10rem;
+  }
+  .Amazing img {
+    width: 100%;
+  }
+}
+@media (max-width: 990px) {
+  .head {
+    display: none;
+  }
+  .head-phone {
+    display: block;
+  }
+  .Reservation .icons {
+    text-align: center;
+  }
+  .Reservation .reservFoot {
+    margin-top: 13rem;
+  }
+  .Amazing img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
